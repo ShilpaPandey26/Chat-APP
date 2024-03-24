@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <title>Chat App</title>
+</head>
+<body>
+  <div class="container">
+    <div class="img">
+      <img src="https://cdn.iconscout.com/icon/free/png-256/free-whatsapp-1946321-1646405.png" alt="Chat Icon" />
+    </div>
+    <h2>Welcome to Chat App</h2>
+    <div class="content"></div>
+    <div class="send">
+      <form id="form-data">
+        <input type="text" placeholder="Type here" id="messageInp" />
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  </div>
+  <script defer src="http://localhost:8000/socket.io/socket.io.js"></script>
+  <script defer src="./js/client.js"></script>
+</body>
+</html>

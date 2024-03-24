@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+   background-color: #a3f9bd;
+}
+
+img {
+    height: 3rem; /* Adjust as needed */
+}
+
+h2{
+    padding-bottom:1rem;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    height: 100vh;
+}
+
+.content {
+    background-color: #f0f0f0; /* Light grey background */
+    height: 60vh;
+    width: 60vw; /* Adjust width as needed */
+    margin: 0 auto;
+    padding: 1rem;
+    overflow-y: auto;
+    border-radius: 10px;
+}
+
+.message {
+    max-width: 70%; /* Limit message width */
+}
+
+.left, .right {
+    padding: 1rem; /* Increase padding for better spacing */
+    border-radius: 10px;
+    margin-bottom: 1rem; 
+    width:fit-content/* Increase margin-bottom for better spacing */
+}
+
+.left {
+    background-color: #fff;
+    float: left; 
+    clear: both
+    
+   /* White background for received messages */
+}
+
+.right {
+    background-color: #add8e6; 
+  /* Light blue background for sent messages */
+    float: right; 
+    clear: both;/* Float messages to the right */
+}
+
+.send {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%; /* Ensure the send section takes the full width */
+}
+
+input[type="text"] {  
+    padding: 0.8rem;
+    border-radius: 20px; /* Rounded corners for input */
+    border: 1px solid #ccc; /* Light grey border */
+    outline: none;
+    font-size:1.2rem;
+}
+
+
+@media(max-width:600px){
+    input[type="text"] {  
+        width:200px;
+        font-size:1rem;
+}
+}
+
+
+@media(max-width:500px){
+    input[type="text"] {  
+        width:100px;
+        font-size:0.8rem;
+}
+}
+button[type="submit"] {
+    padding: 0.8rem 1.5rem; /* Increase padding for better clickability */
+    border: none;
+    border-radius: 20px; /* Rounded corners for button */
+    background-color: rgb(95, 192, 224); /* WhatsApp green */
+    color: #fff; /* White text color */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition */
+    margin-left: 0.5rem; /* Add margin to separate from input */
+}
+
+button[type="submit"]:hover {
+    background-color: #118db0; /* Darker green on hover */
+}
